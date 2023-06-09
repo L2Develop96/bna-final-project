@@ -25,9 +25,11 @@ const router = createBrowserRouter([
         path: '/login',
         element: <Authentication />,
       },
+      //TODO: <SignUp /> Component will be added in here as a children like the <Authentication /> Component.
     ],
   },
   {
+    //? Rename the home path to products later so it makes sense since our home page will consist of displaying the products.
     path: '/home',
     element: <Root />,
     children: [

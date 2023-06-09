@@ -12,7 +12,7 @@ import AmazonLogo from '../../../assets/svg/amazon_logo.svg';
 import Card from '../../../components/Card';
 import { primaryColor } from '../../../utils/constant';
 
-//TODO: The Authentication Card is already created, all you need to do is create the logic behind it and create the sign up page.
+//TODO: The Authentication Card is already created, all you need to do is create the logic behind it and create the <SignUp /> page.
 //? Add references using useRef() hook and attach them to the inputs so you can access the value.
 //? ENDPOINT URL can be found in the utils/constants.ts file.
 //! Please create the sign up component in another file and not in here (Best Practice).
