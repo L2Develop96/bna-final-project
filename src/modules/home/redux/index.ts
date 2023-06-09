@@ -1,3 +1,3 @@
-import homeSlice from './slice';
+import productSlice from './slice';
 
-export default homeSlice;
+export default productSlice;

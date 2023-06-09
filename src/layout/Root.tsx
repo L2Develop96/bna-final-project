@@ -1,28 +1,32 @@
 import { Box, Flex } from '@chakra-ui/react';
 import { Outlet } from 'react-router-dom';
 
+//TODO Follow the instructions below
+
 const Root = () => {
   return (
-    <Flex h="100vh" flexDir="column" justifyContent="space-between">
-      {/* HEADER */}
-      <Box w="100%" bg="whatsapp.100">
-        Header
+    <Flex flexDirection="column" minHeight="100vh">
+      <Box as="header">
+        {/* Create Header Component and call it */}
+        {/*  <Header /> */}
+        <Box w="100%" bg="whatsapp.200" h={20}>
+          Header
+        </Box>
       </Box>
-      {/*************/}
 
-      {/* MAIN CONTENT */}
-      <Box h="100%" bg="whatsapp.200">
+      <Box as="main" flex="1">
+        {/* Create a Container Component (from chakra) and wrap it with Outlet and set it's max width to 8xl */}
         <Outlet />
       </Box>
-      {/*************/}
 
-      {/* FOOTER */}
-      <Box w="100%" bg="whatsapp.300">
-        Footer
+      <Box as="footer" bg="whatsapp.500">
+        {/* Create Footer Component and call it */}
+        {/* <Footer /> */}
+        <Box w="100%" bg="whatsapp.400" h={20}>
+          Footer
+        </Box>
       </Box>
-      {/*************/}
     </Flex>
-    // Footer
   );
 };
 
